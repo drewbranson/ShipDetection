@@ -1,2 +1,2 @@
-# SNTShipDetection
-SNT ship detection using the ASF to download data, processing through SNAP GPT and uploading to a website using QGIS2WEB
+# ShipDetection
+Tool for downloading S1 data from the asf process it using SNAP GPT and extracting the output into QGIS. 
