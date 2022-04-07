@@ -3,7 +3,10 @@
 import os
 import pandas as pd
 
-ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'Detected_width:Double', 'Detected_length:Double', 'style_css:String', 'Date', 'Time'])
+# ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'Detected_width:Double', 'Detected_length:Double', 'style_css:String', 'Date', 'Time'])
+
+ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'Point', 'Detected_x', 'Detected_y', 'Detected_width', 'Detected_length', 'style_css', 'Date', 'Time'])
+
 
 indir = '/mnt/36464FC4464F8419/Products/BlackSea_ShipDet'
 # outdir = '/media/drew/36464FC4464F8419/Products/ShipDetection_shp'
