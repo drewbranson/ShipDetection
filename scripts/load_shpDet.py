@@ -1,4 +1,4 @@
-uri = "file:/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv?encoding=%s&delimiter=%s&xField=%s&yField=%s&crs=%s" % ("UTF-8",",", "Detected_lon:Double", "Detected_lat:Double","epsg:4326")
+uri = "file:/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv?encoding=%s&delimiter=%s&xField=%s&yField=%s&crs=%s" % ("UTF-8",",", "Longitude", "Latitude","epsg:4326")
 
 # #Make a vector layer
 ShipDetections=QgsVectorLayer(uri,"ShipDetections","delimitedtext")

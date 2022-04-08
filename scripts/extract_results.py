@@ -3,9 +3,9 @@
 import os
 import pandas as pd
 
-# ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'Detected_width:Double', 'Detected_length:Double', 'style_css:String', 'Date', 'Time'])
+ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'Detected_width:Double', 'Detected_length:Double', 'style_css:String', 'Date', 'Time'])
 
-ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'Point', 'Detected_x', 'Detected_y', 'Detected_width', 'Detected_length', 'style_css', 'Date', 'Time'])
+# ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'Point', 'Detected_x', 'Detected_y', 'Detected_width', 'Detected_length', 'style_css', 'Date', 'Time'])
 
 
 indir = '/mnt/36464FC4464F8419/Products/BlackSea_ShipDet'
@@ -20,6 +20,7 @@ for root, dirs, files in os.walk(indir):
             # get date from pathname
             datetime = fullname.split('_')[7]
             date = datetime.split('T')[0]
+            
             time = datetime.split('T')[1]
 
             df = pd.read_csv(fullname,sep='\t',skiprows=(1),header=(0))
@@ -32,8 +33,11 @@ for root, dirs, files in os.walk(indir):
 
 
 
-            ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
+            # ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
 
             # raise ValueError('debug')
 
+ShipDetection = ShipDetection.drop(['geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'style_css:String'], axis = 1)
+ShipDetection = ShipDetection.rename(columns={'Detected_width:Double': 'Detected_width', 'Detected_length:Double': 'Detected_length', 'Detected_lat:Double': 'Latitude', 'Detected_lon:Double': 'Longitude'})
 
+ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
