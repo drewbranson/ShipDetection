@@ -5,4 +5,4 @@ google drive hosted: (updated 20220407)
 https://sntblackseashipdetection.on.drv.tw/www.BlackSeaShipDetection.com/
 
 github hosted: (active)
-drewbranson.github.io
+https://drewbranson.github.io  
