@@ -1,0 +1,1914 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.24.1-Tisler" saveUser="drew" saveUserFull="Drew" saveDateTime="2022-04-12T23:20:03">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+      <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+      <srsid>3452</srsid>
+      <srid>4326</srid>
+      <authid>EPSG:4326</authid>
+      <description>WGS 84</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer legend_split_behavior="0" providerKey="delimitedtext" id="ShipDetections_50639772_7dc7_4f72_8ae9_15873f1f2103" source="./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326" name="ShipDetections" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" providerKey="delimitedtext" id="ShipDetections_6588f3c5_40b4_4599_ae1c_34c70d692b0f" source="./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326" name="ShipDetections" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" providerKey="delimitedtext" id="ShipDetections_3b416e78_5cdf_4acb_8f78_7bf41abbb86f" source="./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326" name="ShipDetections" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" providerKey="delimitedtext" id="ShipDetections_0fc0c822_59bc_4b8e_99d1_2b3c5773f9b1" source="./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326" name="ShipDetections" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" providerKey="delimitedtext" id="ShipDetections_6152dece_89db_4407_8e83_30eb10577a6b" source="./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326" name="ShipDetections" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" providerKey="wms" id="Google_Satellite_ab2cbb1e_e645_4792_8d2e_f622da742a13" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=20&amp;zmin=0" name="Google Satellite" checked="Qt::Checked" legend_exp="" patch_size="-1,-1" expanded="1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>Google_Satellite_ab2cbb1e_e645_4792_8d2e_f622da742a13</item>
+      <item>ShipDetections_6152dece_89db_4407_8e83_30eb10577a6b</item>
+      <item>ShipDetections_0fc0c822_59bc_4b8e_99d1_2b3c5773f9b1</item>
+      <item>ShipDetections_3b416e78_5cdf_4acb_8f78_7bf41abbb86f</item>
+      <item>ShipDetections_6588f3c5_40b4_4599_ae1c_34c70d692b0f</item>
+      <item>ShipDetections_50639772_7dc7_4f72_8ae9_15873f1f2103</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings intersection-snapping="0" tolerance="12" type="1" minScale="0" unit="1" enabled="0" scaleDependencyMode="0" self-snapping="0" mode="2" maxScale="0">
+    <individual-layer-settings>
+      <layer-setting tolerance="12" type="1" minScale="0" id="ShipDetections_3b416e78_5cdf_4acb_8f78_7bf41abbb86f" units="1" enabled="1" maxScale="0"/>
+      <layer-setting tolerance="12" type="1" minScale="0" id="ShipDetections_50639772_7dc7_4f72_8ae9_15873f1f2103" units="1" enabled="1" maxScale="0"/>
+      <layer-setting tolerance="12" type="1" minScale="0" id="ShipDetections_6588f3c5_40b4_4599_ae1c_34c70d692b0f" units="1" enabled="1" maxScale="0"/>
+      <layer-setting tolerance="12" type="1" minScale="0" id="ShipDetections_6152dece_89db_4407_8e83_30eb10577a6b" units="1" enabled="1" maxScale="0"/>
+      <layer-setting tolerance="12" type="1" minScale="0" id="ShipDetections_0fc0c822_59bc_4b8e_99d1_2b3c5773f9b1" units="1" enabled="1" maxScale="0"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <main-annotation-layer legendPlaceholderImage="" autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyMessage="" type="annotation" refreshOnNotifyEnabled="0">
+    <id>Annotations_8f514cd6_9a15_4617_8cde_93fd6d91aa7d</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer legendPlaceholderImage="" autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyMessage="" type="raster" minScale="1e+08" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" maxScale="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-180</xmin>
+        <ymin>-85.05112877980660357</ymin>
+        <xmax>179.99999999999997158</xmax>
+        <ymax>85.05112877980658936</ymax>
+      </wgs84extent>
+      <id>Google_Satellite_ab2cbb1e_e645_4792_8d2e_f622da742a13</id>
+      <datasource>crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=20&amp;zmin=0</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</attribution>
+      <layername>Google Satellite</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fetchMode="0" enabled="0" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option type="Map">
+          <Option type="QString" value="Value" name="identify/format"/>
+        </Option>
+      </customproperties>
+      <pipe-data-defined-properties>
+        <Option type="Map">
+          <Option type="QString" value="" name="name"/>
+          <Option name="properties"/>
+          <Option type="QString" value="collection" name="type"/>
+        </Option>
+      </pipe-data-defined-properties>
+      <pipe>
+        <provider>
+          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+        </provider>
+        <rasterrenderer type="singlebandcolordata" opacity="1" band="1" nodataColor="" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
+        <huesaturation colorizeBlue="128" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeGreen="128" invertColors="0" colorizeRed="255" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+        <resamplingStage>resamplingFilter</resamplingStage>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer labelsEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" simplifyAlgorithm="0" autoRefreshTime="0" type="vector" simplifyLocal="1" maxScale="0" legendPlaceholderImage="" symbologyReferenceScale="-1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="100000000" wkbType="Point" geometry="Point" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </wgs84extent>
+      <id>ShipDetections_0fc0c822_59bc_4b8e_99d1_2b3c5773f9b1</id>
+      <datasource>file:./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ShipDetections</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal durationUnit="min" fixedDuration="0" endField="" durationField="" startExpression="" enabled="0" startField="" endExpression="" limitMode="0" mode="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0" referencescale="-1">
+        <symbols>
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="125,139,143,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="125,139,143,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="field_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ShipDetections" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_width" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_length" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Month" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Day" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="field_1" name="" index="0"/>
+        <alias field="ShipDetections" name="" index="1"/>
+        <alias field="Detected_width" name="" index="2"/>
+        <alias field="Detected_length" name="" index="3"/>
+        <alias field="Date" name="" index="4"/>
+        <alias field="Year" name="" index="5"/>
+        <alias field="Month" name="" index="6"/>
+        <alias field="Day" name="" index="7"/>
+        <alias field="Time" name="" index="8"/>
+        <alias field="Latitude" name="" index="9"/>
+        <alias field="Longitude" name="" index="10"/>
+      </aliases>
+      <defaults>
+        <default field="field_1" expression="" applyOnUpdate="0"/>
+        <default field="ShipDetections" expression="" applyOnUpdate="0"/>
+        <default field="Detected_width" expression="" applyOnUpdate="0"/>
+        <default field="Detected_length" expression="" applyOnUpdate="0"/>
+        <default field="Date" expression="" applyOnUpdate="0"/>
+        <default field="Year" expression="" applyOnUpdate="0"/>
+        <default field="Month" expression="" applyOnUpdate="0"/>
+        <default field="Day" expression="" applyOnUpdate="0"/>
+        <default field="Time" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="field_1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ShipDetections" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_width" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_length" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Date" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Year" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Month" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Day" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Time" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="field_1" desc="" exp=""/>
+        <constraint field="ShipDetections" desc="" exp=""/>
+        <constraint field="Detected_width" desc="" exp=""/>
+        <constraint field="Detected_length" desc="" exp=""/>
+        <constraint field="Date" desc="" exp=""/>
+        <constraint field="Year" desc="" exp=""/>
+        <constraint field="Month" desc="" exp=""/>
+        <constraint field="Day" desc="" exp=""/>
+        <constraint field="Time" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer labelsEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" simplifyAlgorithm="0" autoRefreshTime="0" type="vector" simplifyLocal="1" maxScale="0" legendPlaceholderImage="" symbologyReferenceScale="-1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="100000000" wkbType="Point" geometry="Point" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </wgs84extent>
+      <id>ShipDetections_3b416e78_5cdf_4acb_8f78_7bf41abbb86f</id>
+      <datasource>file:./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ShipDetections</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal durationUnit="min" fixedDuration="0" endField="" durationField="" startExpression="" enabled="0" startField="" endExpression="" limitMode="0" mode="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0" referencescale="-1">
+        <symbols>
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="231,113,72,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="231,113,72,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="field_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ShipDetections" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_width" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_length" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Month" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Day" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="field_1" name="" index="0"/>
+        <alias field="ShipDetections" name="" index="1"/>
+        <alias field="Detected_width" name="" index="2"/>
+        <alias field="Detected_length" name="" index="3"/>
+        <alias field="Date" name="" index="4"/>
+        <alias field="Year" name="" index="5"/>
+        <alias field="Month" name="" index="6"/>
+        <alias field="Day" name="" index="7"/>
+        <alias field="Time" name="" index="8"/>
+        <alias field="Latitude" name="" index="9"/>
+        <alias field="Longitude" name="" index="10"/>
+      </aliases>
+      <defaults>
+        <default field="field_1" expression="" applyOnUpdate="0"/>
+        <default field="ShipDetections" expression="" applyOnUpdate="0"/>
+        <default field="Detected_width" expression="" applyOnUpdate="0"/>
+        <default field="Detected_length" expression="" applyOnUpdate="0"/>
+        <default field="Date" expression="" applyOnUpdate="0"/>
+        <default field="Year" expression="" applyOnUpdate="0"/>
+        <default field="Month" expression="" applyOnUpdate="0"/>
+        <default field="Day" expression="" applyOnUpdate="0"/>
+        <default field="Time" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="field_1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ShipDetections" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_width" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_length" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Date" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Year" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Month" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Day" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Time" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="field_1" desc="" exp=""/>
+        <constraint field="ShipDetections" desc="" exp=""/>
+        <constraint field="Detected_width" desc="" exp=""/>
+        <constraint field="Detected_length" desc="" exp=""/>
+        <constraint field="Date" desc="" exp=""/>
+        <constraint field="Year" desc="" exp=""/>
+        <constraint field="Month" desc="" exp=""/>
+        <constraint field="Day" desc="" exp=""/>
+        <constraint field="Time" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer labelsEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" simplifyAlgorithm="0" autoRefreshTime="0" type="vector" simplifyLocal="1" maxScale="0" legendPlaceholderImage="" symbologyReferenceScale="-1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="100000000" wkbType="Point" geometry="Point" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </wgs84extent>
+      <id>ShipDetections_50639772_7dc7_4f72_8ae9_15873f1f2103</id>
+      <datasource>file:./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ShipDetections</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal durationUnit="min" fixedDuration="0" endField="" durationField="" startExpression="" enabled="0" startField="" endExpression="" limitMode="0" mode="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0" referencescale="-1">
+        <symbols>
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="190,207,80,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="190,207,80,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="field_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ShipDetections" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_width" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_length" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Month" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Day" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="field_1" name="" index="0"/>
+        <alias field="ShipDetections" name="" index="1"/>
+        <alias field="Detected_width" name="" index="2"/>
+        <alias field="Detected_length" name="" index="3"/>
+        <alias field="Date" name="" index="4"/>
+        <alias field="Year" name="" index="5"/>
+        <alias field="Month" name="" index="6"/>
+        <alias field="Day" name="" index="7"/>
+        <alias field="Time" name="" index="8"/>
+        <alias field="Latitude" name="" index="9"/>
+        <alias field="Longitude" name="" index="10"/>
+      </aliases>
+      <defaults>
+        <default field="field_1" expression="" applyOnUpdate="0"/>
+        <default field="ShipDetections" expression="" applyOnUpdate="0"/>
+        <default field="Detected_width" expression="" applyOnUpdate="0"/>
+        <default field="Detected_length" expression="" applyOnUpdate="0"/>
+        <default field="Date" expression="" applyOnUpdate="0"/>
+        <default field="Year" expression="" applyOnUpdate="0"/>
+        <default field="Month" expression="" applyOnUpdate="0"/>
+        <default field="Day" expression="" applyOnUpdate="0"/>
+        <default field="Time" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="field_1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ShipDetections" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_width" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_length" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Date" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Year" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Month" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Day" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Time" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="field_1" desc="" exp=""/>
+        <constraint field="ShipDetections" desc="" exp=""/>
+        <constraint field="Detected_width" desc="" exp=""/>
+        <constraint field="Detected_length" desc="" exp=""/>
+        <constraint field="Date" desc="" exp=""/>
+        <constraint field="Year" desc="" exp=""/>
+        <constraint field="Month" desc="" exp=""/>
+        <constraint field="Day" desc="" exp=""/>
+        <constraint field="Time" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer labelsEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" simplifyAlgorithm="0" autoRefreshTime="0" type="vector" simplifyLocal="1" maxScale="0" legendPlaceholderImage="" symbologyReferenceScale="-1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="100000000" wkbType="Point" geometry="Point" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </wgs84extent>
+      <id>ShipDetections_6152dece_89db_4407_8e83_30eb10577a6b</id>
+      <datasource>file:./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ShipDetections</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal durationUnit="min" fixedDuration="0" endField="" durationField="" startExpression="" enabled="0" startField="" endExpression="" limitMode="0" mode="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0" referencescale="-1">
+        <symbols>
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="232,113,141,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="232,113,141,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="field_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ShipDetections" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_width" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_length" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Month" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Day" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="field_1" name="" index="0"/>
+        <alias field="ShipDetections" name="" index="1"/>
+        <alias field="Detected_width" name="" index="2"/>
+        <alias field="Detected_length" name="" index="3"/>
+        <alias field="Date" name="" index="4"/>
+        <alias field="Year" name="" index="5"/>
+        <alias field="Month" name="" index="6"/>
+        <alias field="Day" name="" index="7"/>
+        <alias field="Time" name="" index="8"/>
+        <alias field="Latitude" name="" index="9"/>
+        <alias field="Longitude" name="" index="10"/>
+      </aliases>
+      <defaults>
+        <default field="field_1" expression="" applyOnUpdate="0"/>
+        <default field="ShipDetections" expression="" applyOnUpdate="0"/>
+        <default field="Detected_width" expression="" applyOnUpdate="0"/>
+        <default field="Detected_length" expression="" applyOnUpdate="0"/>
+        <default field="Date" expression="" applyOnUpdate="0"/>
+        <default field="Year" expression="" applyOnUpdate="0"/>
+        <default field="Month" expression="" applyOnUpdate="0"/>
+        <default field="Day" expression="" applyOnUpdate="0"/>
+        <default field="Time" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="field_1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ShipDetections" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_width" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_length" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Date" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Year" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Month" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Day" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Time" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="field_1" desc="" exp=""/>
+        <constraint field="ShipDetections" desc="" exp=""/>
+        <constraint field="Detected_width" desc="" exp=""/>
+        <constraint field="Detected_length" desc="" exp=""/>
+        <constraint field="Date" desc="" exp=""/>
+        <constraint field="Year" desc="" exp=""/>
+        <constraint field="Month" desc="" exp=""/>
+        <constraint field="Day" desc="" exp=""/>
+        <constraint field="Time" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer labelsEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" simplifyAlgorithm="0" autoRefreshTime="0" type="vector" simplifyLocal="1" maxScale="0" legendPlaceholderImage="" symbologyReferenceScale="-1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="100000000" wkbType="Point" geometry="Point" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>27.46222020936014729</xmin>
+        <ymin>40.91176324259498642</ymin>
+        <xmax>42.29150582133588188</xmax>
+        <ymax>47.28262450320671917</ymax>
+      </wgs84extent>
+      <id>ShipDetections_6588f3c5_40b4_4599_ae1c_34c70d692b0f</id>
+      <datasource>file:./output/ShipDetections.csv?encoding=UTF-8&amp;delimiter=,&amp;xField=Longitude&amp;yField=Latitude&amp;crs=epsg:4326</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ShipDetections</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal durationUnit="min" fixedDuration="0" endField="" durationField="" startExpression="" enabled="0" startField="" endExpression="" limitMode="0" mode="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0" referencescale="-1">
+        <symbols>
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" clip_to_extent="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="133,182,111,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="133,182,111,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="field_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ShipDetections" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_width" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Detected_length" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Month" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Day" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="field_1" name="" index="0"/>
+        <alias field="ShipDetections" name="" index="1"/>
+        <alias field="Detected_width" name="" index="2"/>
+        <alias field="Detected_length" name="" index="3"/>
+        <alias field="Date" name="" index="4"/>
+        <alias field="Year" name="" index="5"/>
+        <alias field="Month" name="" index="6"/>
+        <alias field="Day" name="" index="7"/>
+        <alias field="Time" name="" index="8"/>
+        <alias field="Latitude" name="" index="9"/>
+        <alias field="Longitude" name="" index="10"/>
+      </aliases>
+      <defaults>
+        <default field="field_1" expression="" applyOnUpdate="0"/>
+        <default field="ShipDetections" expression="" applyOnUpdate="0"/>
+        <default field="Detected_width" expression="" applyOnUpdate="0"/>
+        <default field="Detected_length" expression="" applyOnUpdate="0"/>
+        <default field="Date" expression="" applyOnUpdate="0"/>
+        <default field="Year" expression="" applyOnUpdate="0"/>
+        <default field="Month" expression="" applyOnUpdate="0"/>
+        <default field="Day" expression="" applyOnUpdate="0"/>
+        <default field="Time" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="field_1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ShipDetections" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_width" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Detected_length" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Date" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Year" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Month" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Day" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Time" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="field_1" desc="" exp=""/>
+        <constraint field="ShipDetections" desc="" exp=""/>
+        <constraint field="Detected_width" desc="" exp=""/>
+        <constraint field="Detected_length" desc="" exp=""/>
+        <constraint field="Date" desc="" exp=""/>
+        <constraint field="Year" desc="" exp=""/>
+        <constraint field="Month" desc="" exp=""/>
+        <constraint field="Day" desc="" exp=""/>
+        <constraint field="Time" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="Google_Satellite_ab2cbb1e_e645_4792_8d2e_f622da742a13"/>
+    <layer id="ShipDetections_6152dece_89db_4407_8e83_30eb10577a6b"/>
+    <layer id="ShipDetections_0fc0c822_59bc_4b8e_99d1_2b3c5773f9b1"/>
+    <layer id="ShipDetections_3b416e78_5cdf_4acb_8f78_7bf41abbb86f"/>
+    <layer id="ShipDetections_6588f3c5_40b4_4599_ae1c_34c70d692b0f"/>
+    <layer id="ShipDetections_50639772_7dc7_4f72_8ae9_15873f1f2103"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7030</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString"></AreaUnits>
+      <DistanceUnits type="QString"></DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>Drew</author>
+    <creation>2022-04-12T21:00:50</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <mapViewDocks3D/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymin="38.89452512687194741" xmax="42.26607357082443173" ymax="48.85892906656450663" xmin="26.69532367824990615">
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings timeStep="1" frameRate="1" timeStepUnit="h" cumulativeTemporalRange="0"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option type="QChar" value="" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="direction_format"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="QChar" value="" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
