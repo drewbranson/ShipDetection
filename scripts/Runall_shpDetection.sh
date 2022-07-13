@@ -8,3 +8,4 @@ python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py
 
 python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py
 
+./Leaflet_Scripts/convert_csv_geojson.sh 
