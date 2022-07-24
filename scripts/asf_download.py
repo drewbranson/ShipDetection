@@ -3,14 +3,14 @@ import asf_search as asf
 import geopandas as gpd
 from shapely.geometry import box
 from datetime import date 
-import fiona
 import os
 import pandas as pd
-
+import fiona
 
 ###########Inputs#################
 download_path = '/mnt/36464FC4464F8419/Data/Ukraine/BlackSea/toprocess'
-AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/AOI/BlackSea.kml'
+# AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/AOI/BlackSea.kml'
+AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp'
 
 
 # startdate   = date(2022, 3, 21)
@@ -19,15 +19,15 @@ startdate = str(data.values[0,0])
 enddate = str(date.today())
 # enddate = date(2022, 3, 23)
 
-file = open("startdate.txt", "w")
-file.write(enddate)
-file.close
+# file = open("startdate.txt", "w")             uncomment block for production
+# file.write(enddate)
+# file.close
 
 # os.mkdir(download_path)
 
 ## 1. Read Shapefile using Geopandas
-gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'
-gdf = gpd.read_file(AOI_Path, driver='KML')
+# gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'  #kml isn't working with fiona or geopandas anymore, i don't know why, just use shp. One less step for me anyways
+gdf = gpd.read_file(AOI_Path, driver='shp')
 
 ### 2. Extract the Bounding Box Coordinates
 bounds = gdf.total_bounds

@@ -11,4 +11,3 @@ if not ShipDetections.isValid():
 QgsProject.instance().addMapLayer(ShipDetections)
 
 # csv_layer=QgsVectorLayer(uri:string,layer name: string, library:string)
-print(uri)
