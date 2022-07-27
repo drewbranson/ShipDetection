@@ -19,9 +19,9 @@ startdate = str(data.values[0,0])
 enddate = str(date.today())
 # enddate = date(2022, 3, 23)
 
-# file = open("startdate.txt", "w")             uncomment block for production
-# file.write(enddate)
-# file.close
+file = open("startdate.txt", "w")             #uncomment block for production
+file.write(enddate)
+file.close
 
 # os.mkdir(download_path)
 
