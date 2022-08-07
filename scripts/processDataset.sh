@@ -63,7 +63,7 @@ for F in $(ls -1 "${sourceDirectory}"/S1*.zip); do
   ${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile}
   # ${gptPath} ${graphXmlPath} -e -p ${parameterFilePath} -t ${targetFile} ${sourceFile}
 
-  mv  -v ${sourceFile} ${outputDirectory}
+  mv  -v ${sourceFile} ${outputDirectory}       # move source data to a new directory
 
 done
 

@@ -9,8 +9,8 @@ ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Dete
 # ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'Point', 'Detected_x', 'Detected_y', 'Detected_width', 'Detected_length', 'style_css', 'Date', 'Time'])
 enddate = (date.today())
 
-indir = '/mnt/36464FC4464F8419/Products/BlackSea_ShipDet'
-# outdir = '/media/drew/36464FC4464F8419/Products/ShipDetection_shp'
+indir = '/mnt/sdb1/Products/BlackSea_ShipDet'
+# outdir = '/media/drew/sbd1/Products/ShipDetection_shp'
 print("extracting files from "+indir)
 for root, dirs, files in os.walk(indir):
     for file in files:
@@ -60,5 +60,5 @@ for root, dirs, files in os.walk(indir):
 
 ShipDetection = ShipDetection.drop(['geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'style_css:String'], axis = 1)
 ShipDetection = ShipDetection.rename(columns={'Detected_width:Double': 'Detected_width', 'Detected_length:Double': 'Detected_length', 'Detected_lat:Double': 'Latitude', 'Detected_lon:Double': 'Longitude'})
-
+ShipDetection.index.name = 'field_1'
 ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')

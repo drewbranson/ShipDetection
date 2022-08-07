@@ -8,7 +8,7 @@ import pandas as pd
 import fiona
 
 ###########Inputs#################
-download_path = '/mnt/36464FC4464F8419/Data/Ukraine/BlackSea/toprocess'
+download_path = '/mnt/sdb1/Data/Ukraine/BlackSea/toprocess'
 # AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/AOI/BlackSea.kml'
 AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp'
 
