@@ -61,4 +61,7 @@ for root, dirs, files in os.walk(indir):
 ShipDetection = ShipDetection.drop(['geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'style_css:String'], axis = 1)
 ShipDetection = ShipDetection.rename(columns={'Detected_width:Double': 'Detected_width', 'Detected_length:Double': 'Detected_length', 'Detected_lat:Double': 'Latitude', 'Detected_lon:Double': 'Longitude'})
 ShipDetection.index.name = 'field_1'
+ShipDetection = ShipDetection.sort_values("Date")       #needs to be sorted to set drawing order in leaflet
+
+
 ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
