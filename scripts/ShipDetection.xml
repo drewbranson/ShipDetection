@@ -27,7 +27,7 @@
       <sourceProduct refid="Read"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <vectorFile>/home/drew/GIS/Azov/BlackSea_buffer200.shp</vectorFile>
+      <vectorFile>/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp</vectorFile>
       <separateShapes>true</separateShapes>
     </parameters>
   </node>

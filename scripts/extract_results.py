@@ -9,7 +9,10 @@ ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Dete
 # ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'Point', 'Detected_x', 'Detected_y', 'Detected_width', 'Detected_length', 'style_css', 'Date', 'Time'])
 enddate = (date.today())
 
+# indir = '/mnt/sdb1/Products/BlackSea_ShipDet'
+
 indir = '/mnt/sdb1/Products/BlackSea_ShipDet'
+
 # outdir = '/media/drew/sbd1/Products/ShipDetection_shp'
 print("extracting files from "+indir)
 for root, dirs, files in os.walk(indir):

@@ -37,6 +37,8 @@ targetFilePrefix="$5"
 
 # get path for  data to new directory
 outputDirectory="$3/.."
+
+AOI="$6"
    
 ############################################
 # Helper functions
@@ -60,7 +62,7 @@ for F in $(ls -1 "${sourceDirectory}"/S1*.zip); do
   targetFile="${targetDirectory}/${targetFilePrefix}_$(removeExtension "$(basename ${F})").dim"
   # echo  "sourceFile = "${sourceFile}", targetFile= "${targetFile}
   echo "Executing: "${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile}
-  ${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile}
+  ${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile} 
   # ${gptPath} ${graphXmlPath} -e -p ${parameterFilePath} -t ${targetFile} ${sourceFile}
 
   mv  -v ${sourceFile} ${outputDirectory}       # move source data to a new directory

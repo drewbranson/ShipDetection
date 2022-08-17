@@ -6,11 +6,15 @@ from datetime import date
 import os
 import pandas as pd
 import fiona
+import sys
 
 ###########Inputs#################
-download_path = '/mnt/sdb1/Data/Ukraine/BlackSea/toprocess'
-# AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/AOI/BlackSea.kml'
-AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp'
+download_path = sys.argv[1]
+print(download_path)
+# download_path = '/mnt/sdb1/Data/Ukraine/BlackSea/toprocess'
+
+# AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp'
+AOI_Path = sys.argv[2]
 
 
 # startdate   = date(2022, 3, 21)
