@@ -3,6 +3,7 @@
 import os
 import pandas as pd
 from datetime import date
+import sys
 
 ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'Detected_width:Double', 'Detected_length:Double', 'style_css:String', 'Date', 'Year', 'Month', 'Day', 'Time'])
 
@@ -10,8 +11,7 @@ ShipDetection = pd.DataFrame(columns=[ 'ShipDetections', 'geometry:Point', 'Dete
 enddate = (date.today())
 
 # indir = '/mnt/sdb1/Products/BlackSea_ShipDet'
-
-indir = '/mnt/sdb1/Products/BlackSea_ShipDet'
+indir = sys.argv[1]
 
 # outdir = '/media/drew/sbd1/Products/ShipDetection_shp'
 print("extracting files from "+indir)
@@ -57,7 +57,7 @@ for root, dirs, files in os.walk(indir):
             # ShipDetection = ShipDetection.append(df, ignore_index = True)
             ShipDetection = pd.concat([ShipDetection, df])
 
-            ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
+            # ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections_'+sys.argv[2]+'.csv')
 
             # raise ValueError('debug')
 
@@ -67,4 +67,4 @@ ShipDetection.index.name = 'field_1'
 ShipDetection = ShipDetection.sort_values("Date")       #needs to be sorted to set drawing order in leaflet
 
 
-ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections.csv')
+ShipDetection.to_csv('/home/drew/Documents/GitHub/ShipDetection/output/ShipDetections_'+sys.argv[2]+'.csv')

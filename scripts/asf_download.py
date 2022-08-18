@@ -18,12 +18,12 @@ AOI_Path = sys.argv[2]
 
 
 # startdate   = date(2022, 3, 21)
-data = pd.read_csv('startdate.txt', header=None)
+data = pd.read_csv('startdate_'+sys.argv[3]+'.txt', header=None)
 startdate = str(data.values[0,0])
 enddate = str(date.today())
 # enddate = date(2022, 3, 23)
 
-file = open("startdate.txt", "w")             #uncomment block for production
+file = open("startdate_"+sys.argv[3]+".txt", "w")             #uncomment block for production
 file.write(enddate)
 file.close
 
