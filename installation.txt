@@ -1,0 +1,8 @@
+install miniconda 
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+
+
+conda install -c conda-forge asf_tools
+conda install -c conda-forge asf_search
+conda install -c conda-forge geopandas
+
