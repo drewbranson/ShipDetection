@@ -27,7 +27,7 @@ for root, dirs, files in os.walk(indir):
             year = date1[:4]
             month = date1[4:6]
             day = date1[6:8]
-            
+
             year1 = int(year)
             month1 = int(month)
             day1 = int(day)

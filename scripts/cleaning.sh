@@ -1,8 +1,8 @@
 # cleaning script
-# find /mnt/sdb1/Data/* -mtime +14 -exec rm {} \; #delete all data more than 2 weeks old
+find /home/drew/Documents/Data/* -mtime +14 -exec rm {} \; #delete all data more than 2 weeks old
 
 # find /mnt/36464FC4464F8419/Data/* -empty -type d -delete
 
-find /home/drew/Documents/Products/* -name "*.img" -mtime +1 -type f -delete   #delete all image product files older than 2 weeks
+find /home/drew/Documents/Products/* -name "*.img" -mtime +14 -type f -delete   #delete all image product files older than 2 weeks
 
 
