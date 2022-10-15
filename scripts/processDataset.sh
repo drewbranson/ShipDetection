@@ -60,8 +60,8 @@ for F in $(ls -1 "${sourceDirectory}"/S1*.zip); do
   sourceFile="$(realpath "$F")"
   targetFile="${targetDirectory}/${targetFilePrefix}_$(removeExtension "$(basename ${F})").dim"
   # echo  "sourceFile = "${sourceFile}", targetFile= "${targetFile}
-  echo "Executing: "${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile} 
-  ${gptPath} ${graphXmlPath} -q 16 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile} 
+  echo "Executing: "${gptPath} ${graphXmlPath} -q 4 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile} 
+  ${gptPath} ${graphXmlPath} -q 4 -c 30G -x -Pfile=${sourceFile} -Ptarget=${targetFile} 
   # ${gptPath} ${graphXmlPath} -e -p ${parameterFilePath} -t ${targetFile} ${sourceFile}
 
   mv  -v ${sourceFile} ${outputDirectory}       # move source data to a new directory

@@ -3,6 +3,6 @@
 
 # find /mnt/36464FC4464F8419/Data/* -empty -type d -delete
 
-find /mnt/sdb1/Products/* -name "*.img" -mtime +1 -type f -delete   #delete all image product files older than 2 weeks
+find /home/drew/Documents/Products/* -name "*.img" -mtime +1 -type f -delete   #delete all image product files older than 2 weeks
 
 

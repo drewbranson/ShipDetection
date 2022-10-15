@@ -22,7 +22,7 @@ for root, dirs, files in os.walk(indir):
             filename = os.path.splitext(os.path.basename(fullname))[0]
             
             # get date from pathname
-            datetime = fullname.split('_')[7]
+            datetime = fullname.split('_')[6]
             date1 = datetime.split('T')[0]
             year = date1[:4]
             month = date1[4:6]
@@ -64,7 +64,7 @@ for root, dirs, files in os.walk(indir):
 
 ShipDetection = ShipDetection.drop(['geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'style_css:String'], axis = 1)
 ShipDetection = ShipDetection.rename(columns={'Detected_width:Double': 'Detected_width', 'Detected_length:Double': 'Detected_length', 'Detected_lat:Double': 'Latitude', 'Detected_lon:Double': 'Longitude'})
-# ShipDetection = ShipDetection.drop(['Detected_width', 'Detected_length', 'ShipDetections', 'Year', 'Month', 'Day', 'Time'], axis = 1)
+ShipDetection = ShipDetection.drop(['Detected_width', 'Detected_length', 'ShipDetections', 'Year', 'Month', 'Day', 'Time'], axis = 1)
 ShipDetection.index.name = 'field_1'
 ShipDetection = ShipDetection.sort_values("Date")       #needs to be sorted to set drawing order in leaflet
 
