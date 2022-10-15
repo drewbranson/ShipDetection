@@ -14,16 +14,18 @@ cd /home/drew/Documents/GitHub/ShipDetection/scripts
 python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI}.shp ${AOI}
 # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea.shp BlackSea
 
-# # ./processDataset.sh ShipDetection.xml SHP_DET.propterties "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" "/mnt/sdb1/Products/BlackSea_ShipDet" SHP
-# sed "s/\AOI/$AOI/g" ShipDetection.xml > ShipDetection_tmp.xml
-# ./processDataset.sh ShipDetection_tmp.xml SHP_DET.propterties ${sourceDirectory} ${targetDirectory} SHP 
+# ./processDataset.sh ShipDetection.xml SHP_DET.propterties "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" "/mnt/sdb1/Products/BlackSea_ShipDet" SHP
+sed "s/\AOI/$AOI/g" ShipDetection.xml > ShipDetection_tmp.xml
+./processDataset.sh ShipDetection_tmp.xml SHP_DET.propterties ${sourceDirectory} ${targetDirectory} SHP 
 
-# python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${targetDirectory} ${AOI}
-# # # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/BlackSea_ShipDet" BlackSea
-# # # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/Mediterranean_East" Mediterranean_East
+python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${targetDirectory} ${AOI}
+# python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/home/drew/Documents/Products/BlackSea" BlackSea
+# python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/Mediterranean_East" Mediterranean_East
 
-# ./Leaflet_Scripts/convert_csv_geojson.sh ${AOI}
+./Leaflet_Scripts/convert_csv_geojson.sh ${AOI}
 
-# ./cleaning.sh
+./cleaning.sh
 
 # ./../../gitpush_shpDet_web.sh
+
+
