@@ -48,8 +48,8 @@ for root, dirs, files in os.walk(indir):
 
             if ddate.days > 100:
                 # ddate = 100
-                df['DaysOld'] = 100
-                # continue
+                # df['DaysOld'] = 100
+                continue
 
 
            
@@ -64,7 +64,7 @@ for root, dirs, files in os.walk(indir):
 
 ShipDetection = ShipDetection.drop(['geometry:Point', 'Detected_x:Integer', 'Detected_y:Integer', 'style_css:String'], axis = 1)
 ShipDetection = ShipDetection.rename(columns={'Detected_width:Double': 'Detected_width', 'Detected_length:Double': 'Detected_length', 'Detected_lat:Double': 'Latitude', 'Detected_lon:Double': 'Longitude'})
-# ShipDetection = ShipDetection.drop(['Detected_width', 'Detected_length', 'ShipDetections', 'Year', 'Month', 'Day', 'Time'], axis = 1)
+ShipDetection = ShipDetection.drop(['Detected_width', 'Detected_length', 'ShipDetections', 'Year', 'Month', 'Day', 'Time'], axis = 1)
 ShipDetection.index.name = 'field_1'
 ShipDetection = ShipDetection.sort_values("Date")       #needs to be sorted to set drawing order in leaflet
 
