@@ -18,7 +18,7 @@ python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sour
 sed "s/\AOI/$AOI/g" ShipDetection.xml > ShipDetection_tmp.xml
 ./processDataset.sh ShipDetection_tmp.xml SHP_DET.propterties ${sourceDirectory} ${targetDirectory} SHP 
 
-python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${targetDirectory} ${AOI}
+python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results_full.py ${targetDirectory} ${AOI}
 # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/home/drew/Documents/Products/BlackSea" BlackSea
 # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/Mediterranean_East" Mediterranean_East
 
@@ -26,6 +26,6 @@ python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${t
 
 ./cleaning.sh
 
-# ./../../gitpush_shpDet_web.sh
+./../../gitpush_shpDet_web.sh
 
 
