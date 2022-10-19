@@ -16,7 +16,7 @@
       <sourceBands/>
       <landMask>false</landMask>
       <useSRTM>false</useSRTM>
-      <geometry>BlackSea_1</geometry>
+      <geometry>NorthAtlantic_1</geometry>
       <invertGeometry>false</invertGeometry>
       <shorelineExtension>50</shorelineExtension>
     </parameters>
@@ -27,7 +27,7 @@
       <sourceProduct refid="Read"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <vectorFile>/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea.shp</vectorFile>
+      <vectorFile>/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/NorthAtlantic.shp</vectorFile>
       <separateShapes>true</separateShapes>
     </parameters>
   </node>
