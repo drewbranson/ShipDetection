@@ -3,6 +3,6 @@
 /home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/BalticSea/toprocess" "/home/drew/Documents/Products/BalticSea" "BalticSea"
 /home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/Caribbean/toprocess" "/home/drew/Documents/Products/Caribbean" "Caribbean"
 /home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/MediterraneanSeaEast/toprocess" "/home/drew/Documents/Products/MediterraneanSeaEast" "MediterraneanSeaEast"
-/home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/SouthPacific/toprocess" "/home/drew/Documents/Products/SouthPacific" "SouthPacific"
+/home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/Pacific1/toprocess" "/home/drew/Documents/Products/Pacific1" "Pacific1"
 /home/drew/Documents/GitHub/ShipDetection/scripts/Runall_shpDetection.sh "/home/drew/Documents/Data/MediterraneanSeaWest/toprocess" "/home/drew/Documents/Products/MediterraneanSeaWest" "MediterraneanSeaWest"
 
