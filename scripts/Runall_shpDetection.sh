@@ -11,7 +11,6 @@ AOI="$3"
 
 cd /home/drew/Documents/GitHub/ShipDetection/scripts
 
-echo python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI}.shp ${AOI}
 python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI}.shp ${AOI}
 # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea.shp BlackSea
 
