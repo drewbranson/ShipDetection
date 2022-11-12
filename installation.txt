@@ -1,5 +1,5 @@
 install miniconda 
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+https://docs.conda.io/projects/conda/en/latest/installr-guide/install/linux.html
 
 
 conda install -c conda-forge asf_tools
@@ -12,3 +12,18 @@ export PATH="/home/drew/snap/bin:$PATH"
 sudo apt install npm
 npm install -g csv2geojson
 
+for Perl Tile generation script:
+sudo cpan
+install Digest::SHA1 qw(sha1 sha1_hex sha1_base64)
+install Digest::MD5 qw(md5 md5_hex md5_base64)
+install Date::Parse
+install POSIX
+install Text::Unidecode
+install MIME::Base64
+install utf8
+install Statistics::Distributions qw(uprob udistr)
+install Math::Round
+install Data::Dumper 'Dumper'
+install B
+install Astro::Nova module
+install Astro::MoonPhase
