@@ -1,0 +1,29 @@
+Priority High:
+  asf_download:
+    use simplified shp files of SeaMask instead of wkt bounds to increase download efficiency
+  
+  webpage:
+    use vector tiles instead of geojson. Based on sample provided by Barry
+    
+
+Priority Medium:
+
+  Webpage:
+    load points at higher zoom based on spatial query
+
+
+Priority Low:
+  
+  AIS:
+    apply to become a contributer to AIS network to get access to free data
+  
+  AIS:
+    find way to correlate observations to ship detections
+    exclude known non transmitting features such as wind turbines, oil rigs, rocks
+  
+  False Positive detection and removal:
+    self explainitory
+
+
+
+
