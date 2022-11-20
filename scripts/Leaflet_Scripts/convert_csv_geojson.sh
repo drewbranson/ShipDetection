@@ -1,3 +1,5 @@
+# Basically just bloat after migrating to vector tiles but json-to-csv.pl will need to be modified without this
+
 AOI="$1"
 
 case $AOI in 
@@ -21,4 +23,7 @@ csv2geojson ../output/ShipDetections_${AOI}.csv > ../output/geodata.geojson
 
 sed -i '1 s/^.*$/var json_'${AOI}'_'${number}' = {/' ../output/geodata.geojson
 
-cp ../output/geodata.geojson ../../ShipDetection.github.io/data/${AOI}_${number}.js
+# for geojson 
+cp ../output/geodata.geojson ../../ShipDetection.github.io/points/data/${AOI}_${number}.js
+# for tiles 
+# cp ../output/geodata.geojson ../output/data/${AOI}_${number}.js
