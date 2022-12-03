@@ -10,3 +10,6 @@ https://drewbranson.github.io
   
 github hosted: (active)
 https://shipdetection.github.io
+
+Future data source
+https://eodms-api-client.readthedocs.io/en/latest/
