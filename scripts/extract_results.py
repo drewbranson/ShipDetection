@@ -22,7 +22,7 @@ for root, dirs, files in os.walk(indir):
             filename = os.path.splitext(os.path.basename(fullname))[0]
             
             # get date from pathname
-            datetime = fullname.split('_')[7]
+            datetime = fullname.split('_')[6]
             date1 = datetime.split('T')[0]
             year = date1[:4]
             month = date1[4:6]
