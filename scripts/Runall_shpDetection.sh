@@ -7,6 +7,7 @@
 sourceDirectory="$1"
 targetDirectory="$2"
 AOI="$3"
+tiles=$4
 # AOI=BlackSea_buffer200
 
 cd /home/drew/Documents/GitHub/ShipDetection/scripts
@@ -25,6 +26,13 @@ python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${t
 ./Leaflet_Scripts/convert_csv_geojson.sh ${AOI}
 
 ./cleaning.sh
+
+if [ ${tiles} -eq 1 ]
+then
+    cd ./../../ShipDetection.github.io/
+    python json-to-csv.py 
+    cd /home/drew/Documents/GitHub/ShipDetection/scripts
+fi
 
 ./../../gitpush_shpDet_web.sh
 
