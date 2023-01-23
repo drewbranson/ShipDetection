@@ -10,12 +10,11 @@ import sys
 
 ###########Inputs#################
 download_path = sys.argv[1]
-print(download_path)
+# print(download_path)
 # download_path = '/mnt/sdb1/Data/Ukraine/BlackSea/toprocess'
 
-# AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_buffer200.shp'
-AOI_Path = sys.argv[2]
-
+# AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_asf.shp'
+AOI_Path = sys.argv[2]+"_asf.shp"
 
 # startdate   = date(2022, 3, 21)
 data = pd.read_csv('startdate_'+sys.argv[3]+'.txt', header=None)
@@ -32,22 +31,25 @@ file.close
 ## 1. Read Shapefile using Geopandas
 # gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'  #kml isn't working with fiona or geopandas anymore, i don't know why, just use shp. One less step for me anyways
 gdf = gpd.read_file(AOI_Path, driver='shp')
+# print(gdf)
+# ### 2. Extract the Bounding Box Coordinates
+# bounds = gdf.total_bounds
+# print(bounds)
 
-### 2. Extract the Bounding Box Coordinates
-bounds = gdf.total_bounds
+# ### 3. Create GeoDataFrame of the Bounding Box 
+# gdf_bounds = gpd.GeoSeries([box(*bounds)])
+# print(gdf_bounds)
 
-### 3. Create GeoDataFrame of the Bounding Box 
-gdf_bounds = gpd.GeoSeries([box(*bounds)])
-
-### 4. Get WKT Coordinates
-wkt_aoi = gdf_bounds.to_wkt().values.tolist()[0]
+# ### 4. Get WKT Coordinates
+wkt_aoi = gdf.to_wkt().values.tolist()[0]
+# print(wkt_aoi)
 
 results = asf.search(
     platform= asf.PLATFORM.SENTINEL1A,
     processingLevel=[asf.PRODUCT_TYPE.GRD_HD],
     start = startdate,
     end = enddate,
-    intersectsWith = wkt_aoi
+    intersectsWith = wkt_aoi[1]
     )
 
 print(f'Total Images Found: {len(results)}')
