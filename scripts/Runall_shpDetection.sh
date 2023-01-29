@@ -11,8 +11,8 @@ AOI="$3"
 
 cd /home/drew/Documents/GitHub/ShipDetection/scripts
 
-python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI}.shp ${AOI}
-# python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py "/home/drew/Documents/Data/SouthIndian/toprocess" /home/drew/Documents/GitHub/ShipDetection/inputs/SouthIndian.shp SouthIndian
+python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI} ${AOI}
+# python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py "/mnt/sdb1/Data/Pacific1" /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/Pacific1 Pacific1
 
 # # ./processDataset.sh ShipDetection.xml SHP_DET.propterties "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" "/mnt/sdb1/Products/BlackSea_ShipDet" SHP
 sed "s/\AOI/$AOI/g" ShipDetection.xml > ShipDetection_tmp.xml
