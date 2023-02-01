@@ -12,7 +12,7 @@ github hosted with vector tiles: (active)
 https://shipdetection.github.io
 
 
-github hosted with geojson points: (active)
+github hosted with geojson points: (inactive) - files exceeding the Github size limit. Now in .gitignore
 https://shipdetection.github.io/points
 
 Future data source
