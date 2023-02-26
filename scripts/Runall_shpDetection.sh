@@ -12,7 +12,7 @@ tiles=$4
 
 cd /home/drew/Documents/GitHub/ShipDetection/scripts
 
-python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI}.shp ${AOI}
+python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py ${sourceDirectory} /home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/${AOI} ${AOI}
 # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/asf_download.py "/home/drew/Documents/Data/SouthIndian/toprocess" /home/drew/Documents/GitHub/ShipDetection/inputs/SouthIndian.shp SouthIndian
 
 # # ./processDataset.sh ShipDetection.xml SHP_DET.propterties "/mnt/sdb1/Data/Ukraine/BlackSea/toprocess" "/mnt/sdb1/Products/BlackSea_ShipDet" SHP
@@ -23,17 +23,17 @@ python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${t
 # # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/home/drew/Documents/Products/BlackSea" BlackSea
 # # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/Mediterranean_East" Mediterranean_East
 
-./Leaflet_Scripts/convert_csv_geojson.sh ${AOI}
+./Leaflet_Scripts/convert_csv_geojson_Shackleton.sh ${AOI}
 
 ./cleaning.sh
 
-if [ ${tiles} -eq 1 ]
-then
-    cd ./../../ShipDetection.github.io/
-    python json-to-csv.py 
-    cd /home/drew/Documents/GitHub/ShipDetection/scripts
-fi
+# if [ ${tiles} -eq 1 ]
+# then
+#     cd ./../../ShipDetection.github.io/
+#     python json-to-csv.py 
+#     cd /home/drew/Documents/GitHub/ShipDetection/scripts
+# fi
 
-./../../gitpush_shpDet_web.sh
+# ./../../gitpush_shpDet_web.sh
 
 

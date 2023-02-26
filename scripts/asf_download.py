@@ -18,9 +18,11 @@ AOI_Path = sys.argv[2]+"_asf.shp"
 
 # startdate   = date(2022, 3, 21)
 data = pd.read_csv('startdate_'+sys.argv[3]+'.txt', header=None)
-startdate = str(data.values[0,0])
-enddate = str(date.today())
-# enddate = date(2022, 3, 23)
+startdate = str(date(2023, 2, 8))
+# startdate = str(data.values[0,0])
+
+# enddate = str(date.today())
+enddate = str(date(2023, 2, 21))
 
 file = open("startdate_"+sys.argv[3]+".txt", "w")             #uncomment block for production
 file.write(enddate)
