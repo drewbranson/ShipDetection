@@ -27,3 +27,5 @@ install Data::Dumper 'Dumper'
 install B
 install Astro::Nova module
 install Astro::MoonPhase
+install JSON
+install GD

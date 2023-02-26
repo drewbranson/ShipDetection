@@ -1,5 +1,5 @@
 # cleaning script
-find /home/drew/Documents/Data/* -mtime +3 -exec rm {} \; #delete all data more than 2 weeks old
+find /home/drew/Documents/Data/* -mtime +3 -exec rm {} \; #delete all data more than 3 days old
 
 # find /mnt/36464FC4464F8419/Data/* -empty -type d -delete
 

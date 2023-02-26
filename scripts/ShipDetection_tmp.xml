@@ -17,6 +17,7 @@
       <landMask>false</landMask>
       <useSRTM>false</useSRTM>
       <geometry>NorthAtlantic_1</geometry>
+      <geometry>SouthEastAsia_1</geometry>
       <invertGeometry>false</invertGeometry>
       <shorelineExtension>50</shorelineExtension>
     </parameters>
@@ -28,6 +29,7 @@
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <vectorFile>/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/NorthAtlantic.shp</vectorFile>
+      <vectorFile>/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/SouthEastAsia.shp</vectorFile>
       <separateShapes>true</separateShapes>
     </parameters>
   </node>
