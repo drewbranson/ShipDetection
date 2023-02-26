@@ -1,0 +1,4 @@
+python3 extract_results_live.py "/run/user/1000/gvfs/smb-share:server=drew-thinkcentre-2.local,share=nansen/Products/BlackSea" BlackSea
+
+
+./Leaflet_Scripts/convert_csv_geojson.sh "BlackSea"
