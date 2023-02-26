@@ -20,7 +20,7 @@ sed "s/\AOI/$AOI/g" ShipDetection.xml > ShipDetection_tmp.xml
 ./processDataset.sh ShipDetection_tmp.xml SHP_DET.propterties ${sourceDirectory} ${targetDirectory} SHP 
 
 python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py ${targetDirectory} ${AOI}
-# # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/home/drew/Documents/Products/BlackSea" BlackSea
+# # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/home/drew/Documents/Products/SouthIndian" SouthIndian
 # # python3 /home/drew/Documents/GitHub/ShipDetection/scripts/extract_results.py "/mnt/sdb1/Products/Mediterranean_East" Mediterranean_East
 
 ./Leaflet_Scripts/convert_csv_geojson_Shackleton.sh ${AOI}

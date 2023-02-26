@@ -34,7 +34,6 @@ targetDirectory="$4"
 # the fifth parameter is a file prefix for the target product name, typically indicating the type of processing
 targetFilePrefix="$5"
 
-
 # get path for  data to new directory
 outputDirectory="$3/.."
 
