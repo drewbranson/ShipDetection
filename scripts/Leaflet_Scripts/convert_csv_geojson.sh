@@ -17,9 +17,10 @@ case $AOI in
 "MediterraneanSeaWest") number="12";;
 "MediterraneanSeaEast") number="13";;
 "BlackSea") number="14";;
+"CaspianSea") number="15";;
 esac
 
-csv2geojson ../output/ShipDetections_${AOI}.csv > ../output/geodata.geojson
+node --max-old-space-size=4096 /usr/local/bin/csv2geojson ../output/ShipDetections_${AOI}.csv > ../output/geodata.geojson
 
 sed -i '1 s/^.*$/var json_'${AOI}'_'${number}' = {/' ../output/geodata.geojson
 

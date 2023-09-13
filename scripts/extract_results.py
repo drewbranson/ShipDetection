@@ -46,10 +46,10 @@ for root, dirs, files in os.walk(indir):
             df['Day'] = day
             df['DaysOld'] = ddate.days
 
-            if ddate.days > 120:
-                # ddate = 100
-                # df['DaysOld'] = 100
-                continue
+            # if ddate.days > 120:
+            #     # ddate = 100
+            #     # df['DaysOld'] = 100
+            #     continue
 
 
            
