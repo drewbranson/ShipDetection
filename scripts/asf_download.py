@@ -57,7 +57,7 @@ print(f'Total Images Found: {len(results)}')
 metadata = results.geojson()
 
 
-session = asf.ASFSession().auth_with_creds('drew_branson.9', 'Razz4ever')
+session = asf.ASFSession().auth_with_creds('Username', 'Password')
 
 
 results.download(
