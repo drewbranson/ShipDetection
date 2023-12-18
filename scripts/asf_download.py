@@ -7,6 +7,8 @@ import os
 import pandas as pd
 import fiona
 import sys
+import os
+from datetime import date, timedelta
 
 ###########Inputs#################
 download_path = sys.argv[1]
@@ -16,20 +18,31 @@ download_path = sys.argv[1]
 # AOI_Path    = '/home/drew/Documents/GitHub/ShipDetection/inputs/SeaMask/BlackSea_asf.shp'
 AOI_Path = sys.argv[2]+"_asf.shp"
 
-# startdate   = date(2022, 3, 21)
-data = pd.read_csv('startdate_'+sys.argv[3]+'.txt', header=None)
-startdate = str(data.values[0,0])
-enddate = str(date.today())
-# enddate = date(2022, 3, 23)
+# Read startdate from the file
+start_date_file_path = "startdate_" + sys.argv[3] + ".txt"
+if os.path.exists(start_date_file_path) and os.stat(start_date_file_path).st_size > 0:
+    data = pd.read_csv(start_date_file_path, header=None)
+    startdate = str(data.values[0, 0])
+else:
+    # If the file is empty, set the date to the previous day
+    previous_day = date.today() - timedelta(days=1)
+    startdate = str(previous_day)
+print(startdate)
+# Update or create the startdate file
+with open(start_date_file_path, "w") as file:
+    file.write(str(date.today()))
+# # startdate   = date(2022, 3, 21)
+# data = pd.read_csv('startdate_'+sys.argv[3]+'.txt', header=None)
+# # startdate = str(date(2023, 2, 22))
+# startdate = str(data.values[0,0])
 
-file = open("startdate_"+sys.argv[3]+".txt", "w")             #uncomment block for production
-file.write(enddate)
-file.close
+# enddate = str(date.today())
+# # enddate = str(date(2023, 3, 6))
 
-# os.mkdir(download_path)
+# file = open("startdate_"+sys.argv[3]+".txt", "w")             #uncomment block for production
+# file.write(enddate)
+# file.close()
 
-## 1. Read Shapefile using Geopandas
-# gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'  #kml isn't working with fiona or geopandas anymore, i don't know why, just use shp. One less step for me anyways
 gdf = gpd.read_file(AOI_Path, driver='shp')
 # print(gdf)
 # ### 2. Extract the Bounding Box Coordinates
@@ -48,7 +61,7 @@ results = asf.search(
     platform= asf.PLATFORM.SENTINEL1A,
     processingLevel=[asf.PRODUCT_TYPE.GRD_HD],
     start = startdate,
-    end = enddate,
+    end = date.today(),
     intersectsWith = wkt_aoi[1]
     )
 
@@ -57,7 +70,7 @@ print(f'Total Images Found: {len(results)}')
 metadata = results.geojson()
 
 
-session = asf.ASFSession().auth_with_creds('drew_branson.9', 'Razz4ever')
+session = asf.ASFSession().auth_with_creds('Username', 'Password')
 
 
 results.download(
